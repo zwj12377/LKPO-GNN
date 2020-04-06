@@ -21,7 +21,7 @@ parser.add_argument('--gpu', type=int, default=0, help='GPU to use [default: GPU
 parser.add_argument('--model', default='pointnet2_part_seg', help='Model name [default: pointnet2_part_seg]')
 parser.add_argument('--model_path', default='log/model.ckpt', help='model checkpoint file path [default: log/model.ckpt]')
 parser.add_argument('--log_dir', default='log_eval', help='Log dir [default: log_eval]')
-parser.add_argument('--num_point', type=int, default=2048, help='Point Number [default: 2048]')
+parser.add_argument('--num_point', type=int, default=1024, help='Point Number [default: 2048]')
 parser.add_argument('--batch_size', type=int, default=32, help='Batch Size during training [default: 32]')
 FLAGS = parser.parse_args()
 
