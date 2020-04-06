@@ -20,12 +20,8 @@ sys.path.append(os.path.join(ROOT_DIR, 'tf_utils'))
 sys.path.append(os.path.join(ROOT_DIR, 'models'))
 
 import provider
-#import pointSIFT_pointnet
-import pointSIFT_pointnet as SEG_MODEL
+import pointLKPO_pointnet as SEG_MODEL
 
-
-#import tf_utils.provider as provider
-#import models.pointSIFT_pointnet as SEG_MODEL
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--max_epoch', type=int, default=1000, help='epoch to run[default: 1000]')
