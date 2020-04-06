@@ -3,12 +3,7 @@
 
 
 ### Introduction
-We propose a novel deep LKPO-GNN architecture suitable for extracting the topological features of 3D point cloud by using omni-directional deterministic structured
-geometric relationships between the points. Firstly, the centroids were selected from point cloud by FPS. Secondly, the ball query module is used to obtain the rich
-local feature of each centroid. Then the LKPO-GNN module extracted the meaningful representation using the spatial layout information of the center points.
-After several ball query module and LKPO-GNN modules processing, the center points in 3D point cloud scene becomes less and less, and the feature information of
-the center points aggregation become richer. Our method obtains the deeper feature representation of 3D point cloud by connecting the local and global features
-of 3D point cloud to improve the classification and segmentation results.
+Our method is delicately designed to capture both global and local spatial layout of point cloud by proposing a Local k-NNs Pattern in Omni-Direction Graph Convolution Neural Network architecture, called LKPO-GNN. Our method converts the unordered 3D point cloud into an ordered 1D sequence, to facilitate feeding the raw data into neural networks and simultaneously reducing the computational complexity. LKPO-GNN selects multi-directional k-NNs to form the local topological structure of a centroid, which describes local shapes in the point cloud. Afterwards, GNN is used to combine the local spatial structures and represent the unordered point clouds as a global graph. Experiments on ModelNet40, ShapeNetPart, ScanNet, and S3DIS datasets demonstrate that our proposed method outperforms most existing methods, which verifies the effectiveness and advantage of our work. Additionally, a deep analysis towards illustrating the rationality of our approach, in terms of the learned the topological structure feature, is provided.
 ### Installation
 
 Install <a href="https://www.tensorflow.org/install/">TensorFlow</a>. The code is tested under Tensorflow1.2 GPU version and Python 2.7 on Ubuntu 16.04. It's highly recommended that you have access to GPUs.
