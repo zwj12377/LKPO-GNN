@@ -1,7 +1,3 @@
-'''
-    Single-GPU training.
-    Will use H5 dataset in default. If using normal, will shift to the normal dataset.
-'''
 import argparse
 import math
 from datetime import datetime
